@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  header {
+    @apply flex items-center justify-between py-4 px-4 md:px-10 lg:px-16;
+  }
+  body {
+    @apply transition-all duration-500;
+  }
+}
+
+@layer components {
+  .input {
+    @apply w-full rounded bg-[#333] px-5 py-3.5 placeholder-[gray] outline-none focus:bg-[#454545];
+  }
+}
